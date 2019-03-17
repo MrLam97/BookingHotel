@@ -16,7 +16,9 @@
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i>
+
                                 Email:<a href="mailto:anhemthienlanh.slack.com">anhemthienlanh.slack.com/</a>
+
                             </li>
                             <li>
                                 <i class="fa fa-phone"></i>
@@ -55,6 +57,8 @@
 <div class="copy-right">
     <div class="container">
         &copy;  2018 <a href="https://anhemthienlanh.slack.com/" target="_blank">Team: anh em thiện lành</a>.
+
+
     </div>
 </div>
 <!-- Copy end right-->

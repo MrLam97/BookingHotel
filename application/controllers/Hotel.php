@@ -274,7 +274,7 @@ class Hotel extends MY_Controller
 			$price_from_data=' and price >=' .$price_from;
 		}
 
-		$query1='SELECT count(id) as id FROM hotel WHERE  status = 2 '. $room_type_data .$provinces_data .$price_to_data .$price_from_data .' AND id not in( select hotel_id from transaction where (check_in <= '.$date_from.' AND check_out >= '.$date_from.') or (check_in <= '.$date_to.' AND check_out >= '.$date_to.') )';
+		$query1='SELECT count(id) as id FROM hotel WHERE  status = 2 '. $room_type_data .$provinces_data .$price_to_data .$price_from_data .' AND id not in( select hotel_id from transaction where ((check_in <= '.$date_from.' AND check_out >= '.$date_from.') or (check_in <= '.$date_to.' AND check_out >= '.$date_to.')) )';
 
 		$data = $this->hotel_model->query($query1);
 		foreach ($data as $row)
@@ -284,7 +284,7 @@ class Hotel extends MY_Controller
 
 		$this->data['total'] = $total;
 
- 		$query='SELECT * FROM hotel WHERE  status = 2 '. $room_type_data .$provinces_data .$price_to_data .$price_from_data .' AND id not in( select hotel_id from transaction where (check_in <= '.$date_from.' AND check_out >= '.$date_from.') or (check_in <= '.$date_to.' AND check_out >= '.$date_to.') )	';
+ 		$query='SELECT * FROM hotel WHERE  status = 2 '. $room_type_data .$provinces_data .$price_to_data .$price_from_data .' AND id not in( select hotel_id from transaction where ((check_in <= '.$date_from.' AND check_out >= '.$date_from.') or (check_in <= '.$date_to.' AND check_out >= '.$date_to.')) )	';
 
 		$list=$this->hotel_model->query($query);	
 		$this->data['list']=$list;

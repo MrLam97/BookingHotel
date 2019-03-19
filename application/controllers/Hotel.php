@@ -134,9 +134,11 @@ class Hotel extends MY_Controller
 		$type_qty=$this->hotel_model->get_relative('room_type.id,room_type.name,count(type_id) as qty','(room_type inner join hotel on room_type.id = hotel.type_id)',$input);
 		$this->data['type_qty']=$type_qty;
 
+
  		$message=$this->session->flashdata('message');
         $this->data['message']=$message;
         
+
 		$this->data['title']='Chi tiết phòng';
 		$this->data['temp']='site/hotel/view';
 		$this->load->view('site/layout', $this->data);

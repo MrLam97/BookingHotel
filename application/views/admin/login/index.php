@@ -38,5 +38,9 @@
 	    
 	</div>    
 	
+	<!-- Footer line -->
+	<div id="footer">
+				<div class="wrapper">Bản quyền © 2018 Team anh em thiện lành</div>
+	</div>
 </body>
 </html>

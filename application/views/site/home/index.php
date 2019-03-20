@@ -77,7 +77,9 @@
                                 </a>
                             </li>
                             <li class="dropdown">
+
                                 <a  href="<?php echo base_url('blog/list_blog'); ?>">
+
                                     Bài viết
                                 </a>
                             </li>

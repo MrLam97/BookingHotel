@@ -34,7 +34,9 @@
                         <a href="<?php echo base_url('hotel/room_list'); ?>"> Khách sạn</a>
                     </li>
                     <li class="dropdown">
+
                         <a href="<?php echo base_url('blog/list_blog'); ?>"> Bài viết</a>
+
                     </li>
                     <li class="dropdown">
                         <a href="<?php echo base_url('contact/form'); ?>"> Liên hệ</a>
